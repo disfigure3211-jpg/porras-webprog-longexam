@@ -36,6 +36,10 @@ const routes = [
         path: 'products/:name',
         element: <ProductPage />,
       },
+      {
+        path: 'notfound',
+        element: <NotFoundPage />,
+      },
     ],
   },
   {

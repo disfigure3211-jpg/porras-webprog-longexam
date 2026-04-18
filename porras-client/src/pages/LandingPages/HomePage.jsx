@@ -1,10 +1,13 @@
 import Button from '../../components/Button';
 import banner from '../../assets/img/nu_bulldogex_banner.jpg';
+import flask from '../../assets/img/flask.jpeg';
+import pack from '../../assets/img/pack.jpeg';
+import cap from '../../assets/img/nu_cap.webp';
 
 const HomePage = () => {
     return (
         <div className="flex w-full flex-col gap-6">
-            <section className="relative min-h-[28rem] overflow-hidden border-y-2 border-zinc-900 bg-zinc-900 px-4 py-10 sm:px-6 lg:px-8">
+            <section className="relative min-h-[28rem] overflow-hidden border-y-2 border-zinc-900 bg-zinc-900 px-4 py-10 sm:px-6 lg:px-8 animate-fade-in">
                 <img
                     src={banner}
                     alt=""
@@ -12,7 +15,7 @@ const HomePage = () => {
                 />
                 <div className="absolute inset-0 bg-zinc-900/45" />
 
-                <div className="relative z-10 flex min-h-[22rem] items-start justify-end text-right sm:min-h-[24rem]">
+                <div className="relative z-10 flex min-h-[22rem] items-start justify-end text-right sm:min-h-[24rem] animate-slide-up">
                     <div className="max-w-xl">
                         <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-200">
                             Campus Marketplace
@@ -36,7 +39,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+            <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 animate-fade-in">
                 <div className="mb-6">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
                         Store Overview
@@ -45,25 +48,25 @@ const HomePage = () => {
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                        <p className="text-2xl font-bold text-zinc-900">08</p>
+                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5 animate-card-pop transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+                        <p className="text-2xl font-bold text-zinc-900">09</p>
                         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
                             Products
                         </p>
                     </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5 animate-card-pop transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
                         <p className="text-2xl font-bold text-zinc-900">06</p>
                         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
                             Categories
                         </p>
                     </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                        <p className="text-2xl font-bold text-zinc-900">24</p>
+                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5 animate-card-pop transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+                        <p className="text-2xl font-bold text-zinc-900">36</p>
                         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
                             Orders
                         </p>
                     </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5 animate-card-pop transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
                         <p className="text-2xl font-bold text-zinc-900">03</p>
                         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
                             Pickup Slots
@@ -81,34 +84,34 @@ const HomePage = () => {
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-3">
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                    <article className="rounded-3xl border-2 border-slate-900/70 bg-white p-4 shadow-sm shadow-slate-900/10 animate-card-pop transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+                        <div className="flex aspect-4/3 items-center justify-center overflow-hidden rounded-[1.25rem] bg-slate-100">
+                            <img src={flask} alt="Daily Essentials" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Daily Essentials</h3>
-                        <p className="mt-3 text-sm leading-6 text-zinc-600">
+                        <h3 className="mt-4 text-lg font-semibold text-slate-950">Daily Essentials</h3>
+                        <p className="mt-3 text-sm leading-6 text-slate-600">
                             Bags, tumblers, lanyards, and items used every school day.
                         </p>
                         <Button to="/products" className="mt-4" variant="primary">View Products</Button>
                     </article>
 
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                    <article className="rounded-3xl border-2 border-slate-900/70 bg-white p-4 shadow-sm shadow-slate-900/10 animate-card-pop transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+                        <div className="flex aspect-4/3 items-center justify-center overflow-hidden rounded-[1.25rem] bg-slate-100">
+                            <img src={pack} alt="Study Supplies" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Study Supplies</h3>
-                        <p className="mt-3 text-sm leading-6 text-zinc-600">
+                        <h3 className="mt-4 text-lg font-semibold text-slate-950">Study Supplies</h3>
+                        <p className="mt-3 text-sm leading-6 text-slate-600">
                             Notes, desk tools, and study kits for class and review weeks.
                         </p>
                         <Button to="/products" className="mt-4" variant="primary">Shop Supplies</Button>
                     </article>
 
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                    <article className="rounded-3xl border-2 border-slate-900/70 bg-white p-4 shadow-sm shadow-slate-900/10 animate-card-pop transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+                        <div className="flex aspect-4/3 items-center justify-center overflow-hidden rounded-[1.25rem] bg-slate-100">
+                            <img src={cap} alt="Campus Apparel" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Campus Apparel</h3>
-                        <p className="mt-3 text-sm leading-6 text-zinc-600">
+                        <h3 className="mt-4 text-lg font-semibold text-slate-950">Campus Apparel</h3>
+                        <p className="mt-3 text-sm leading-6 text-slate-600">
                             Comfortable pieces for class days, commute days, and weekends.
                         </p>
                         <Button to="/products" className="mt-4" variant="primary">
